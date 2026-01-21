@@ -1,19 +1,22 @@
 {
     "configurations": [
         {
-            "name" : "Win32",
+            "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/WinAVR/avr/include" //path to avr/include
+                "C:/WinAVR-20100110/avr/include"
             ],
             "defines": [
-                "F_CPU=16000000",
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "F_CPU=16000000UL",
                 "__AVR_ATmega328P__"
             ],
-            "compilerPath": "D:/WinAVR/bin/avr32-gcc.exe", //path to avr-gcc.exe
+            "compilerPath": "C:/WinAVR-20100110/bin/avr-gcc.exe",
             "cStandard": "c11",
-            "cppStandard": "c++14",
-            "intelliSenseMode": "gcc-arm"
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4
