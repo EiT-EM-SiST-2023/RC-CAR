@@ -10,10 +10,11 @@ OBJ = $(SRC:.c=.o)
 
 INC = -I.
 
-Build : $(NAME).hex
-
 Burn : Build
 	avrdude $(ARDUINO) -p ATMEGA328P -U flash:w:$(NAME).hex:i
+	$(MAKE) clean
+
+Build : $(NAME).hex
 
 $(NAME).hex : $(NAME).elf
 	avr-objcopy -j .text -j .data -O ihex $< $@
@@ -25,4 +26,4 @@ $(NAME).elf : $(OBJ)
 	avr-gcc -Os $(DEF) -mmcu=atmega328p -c $< -o $@ $(INC)
 
 clean:
-	del -f *.o *.elf *.hex
+	del *.o *.elf *.hex
