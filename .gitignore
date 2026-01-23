@@ -1,4 +1,4 @@
 *.elf
 *.hex
 *.o
-.vscode
+./.vscode
