@@ -5,7 +5,7 @@ ARDUINO = -F -V -c arduino -P $(SERIAL) -b 115200
 
 DEF = -DF_CPU=16000000UL -D__AVR_ATmega328P__
 
-SRC = main.c pwm_control.c
+SRC = main.c pwm_control.c motor_control.c timebase.c ir_nec.c uart.c
 OBJ = $(SRC:.c=.o)
 
 INC = -I.
