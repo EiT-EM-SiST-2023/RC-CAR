@@ -7,8 +7,9 @@
 #include <avr/io.h>
 
 void uart_init(uint32_t baud) {
-    // UBRR = F_CPU/(16*baud) - 1
-    uint16_t ubrr = (uint16_t)((F_CPU / (16UL * baud)) - 1UL);
+    
+    UCSR0A |= (1 << U2X0);
+    uint16_t ubrr = (uint16_t)((F_CPU / (8UL * baud)) - 1UL);
     UBRR0H = (uint8_t)(ubrr >> 8);
     UBRR0L = (uint8_t)(ubrr & 0xFF);
 
