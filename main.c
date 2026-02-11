@@ -13,11 +13,11 @@
 #define LED_BIT  PB5
 
 // ====== KODY PILOTA (wpiszesz po podglądzie w UART) ======
-#define CMD_FORWARD   0x00
-#define CMD_BACKWARD  0x00
-#define CMD_LEFT      0x00
-#define CMD_RIGHT     0x00
-#define CMD_STOP      0x00
+#define CMD_FORWARD   0x40
+#define CMD_BACKWARD  0x41
+#define CMD_LEFT      0x07
+#define CMD_RIGHT     0x06
+#define CMD_STOP      0x44
 
 // Prędkość jazdy w procentach (0..100)
 #define SPEED_PERCENT  60
