@@ -49,7 +49,7 @@ void pwm_init(void) {
     // ===== Timer2: OC2B(D3) + OC2A(D11) =====
     // D3 = PD3 (OC2B), D11 = PB3 (OC2A)
     DDRD |= (1 << PD3);
-    DDRB |= (1 << PB3);
+    DDRB |= (1 << PB3) | (1 << PB2) | (1 << PB3);
 
     // Phase Correct PWM, TOP=0xFF: WGM22:0 = 0b001
     // Non-inverting on OC2A/OC2B
