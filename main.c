@@ -20,7 +20,7 @@
 #define CMD_STOP      0x44
 
 // Prędkość jazdy w procentach (0..100)
-#define SPEED_PERCENT  60
+#define SPEED_PERCENT  50
 
 static inline void led_init(void) {
     LED_DDR |= (1 << LED_BIT);
