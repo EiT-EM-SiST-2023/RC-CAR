@@ -23,7 +23,7 @@ $(NAME).elf : $(OBJ)
 	avr-gcc -mmcu=atmega328p -o $@ $^
 
 %.o : %.c
-	avr-gcc -Os $(DEF) -mmcu=atmega328p -c $< -o $@ $(INC)
+	avr-gcc -Os $(DEF) -mmcu=atmega328p -std=gnu99 -c $< -o $@ $(INC)
 
 clean:
 	del *.o *.elf *.hex
