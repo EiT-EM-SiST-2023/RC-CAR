@@ -1,13 +1,6 @@
 # RC-CAR
 Zdalnie sterowane autko
 
->Informacja dla Contributor'ów
->**Nie pushujcie prosze .vscode na repo, bo wtedy klonujacy/pullujacy bedzie mial wasz config sciezek do kompilatora i bedzie musial go znowu ustawiac pod siebie**<br>
->*Zeby zmiany w configu sie nie pokazywaly w source control to wpiszcie to w terminal:*
-```
-    git update-index --skip-worktree .\.vscode\c_cpp_properties.json
-```
-
 **To repozytorium ma stanowić prostą bazę do zbudowania własnego, zdalnie sterowanego autka RC.**
 
 ## Baza
@@ -96,6 +89,14 @@ W `definicję` należy wpisać wynik `cmd=` otrzymany wcześniej.
 
 ## Extra
 Kod jest napisany modularnie i wszystkie ważne wartości są zamknięte w definicjach zmiennych na górze plików. 
+
+
+>Informacja dla Contributor'ów
+>**Nie pushujcie prosze .vscode na repo, bo wtedy klonujacy/pullujacy bedzie mial wasz config sciezek do kompilatora i bedzie musial go znowu ustawiac pod siebie**<br>
+>*Zeby zmiany w configu sie nie pokazywaly w source control to wpiszcie to w terminal:*
+```
+    git update-index --skip-worktree .\.vscode\c_cpp_properties.json
+```
 
 dokumentacja technicza:
 - schemat polaczen z kicada(discord UMG)
