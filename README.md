@@ -1,6 +1,6 @@
 # RC-CAR
 Zdalnie sterowane autko
-### To repozytorium ma stanowić prostą bazę do zbudowania własnego, zdalnie sterowanego autka RC.**
+### To repozytorium ma stanowić prostą bazę do zbudowania własnego, zdalnie sterowanego autka RC.
 
 
 ## Baza
