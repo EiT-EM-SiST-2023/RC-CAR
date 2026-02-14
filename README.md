@@ -31,7 +31,7 @@ W `motor_control.h` masz:
 
 Ustaw na `1` dla tej strony, która kręci się odwrotnie. Bez przepinania kabli.
 
-Kiedy auko ściąga na bok to można to porpawić łatwo na przykład tak: right = right * 0.95
+Kiedy autko ściąga na bok to można to porpawić łatwo na przykład tak: right = right * 0.95
 
 **Krok A — podłącz IR i odpal UART**<br>
 
