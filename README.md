@@ -31,7 +31,7 @@ Silniki 4 - 6 V
 
 Mostek H 6 - 27 V
 - Mostek H jest bezpośrednio zasilony z BMS'a ( ~16V )\
--- Sterowany jest PWM o wypełnieniu `35%` by z 16V otrzymać 5V RMS, które zasila silniki.
+  - Sterowany jest PWM o wypełnieniu `35%` by z 16V otrzymać 5V RMS, które zasila silniki.
 
 ## Sterowanie
 Autko jest zdalnie sterowane pilotem do telewizora
