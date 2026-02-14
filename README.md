@@ -75,3 +75,12 @@ Jeśli chcesz mieć 100% pewności, że nie reagujesz na inne piloty, dodaj waru
 zapamiętaj addr, który widzisz zawsze (np. 0x00FF)
 
 i reaguj tylko, jeśli f.address == TEN_ADRES
+
+
+Przeredagowac readme.md
+    - wstep czym jest projekt
+    - co wykorzystujemy fizycznie(elementy, ardunio nano/uno r3, 2/4 silniczki, jeden mostek H na strone - przod i tyl sterowane tak samo,  korzystamy z NEC'a infrared - definicje komend z pilota sa main.c - proghram wypisuje serial'em odbierane komendy)
+    - definicje pinow domyslnych(np. D11 - lewy pwm do przodu)
+    - sterowanie(sterujemy pilotem od telewizora, program obsluguje komendy repeat wysylane przez pilot - tak dlugo jak trzymany jest przycisk tak dlugo wykonywana jest komenda)
+    - zasilanie z BMS(18650 Li-Ion x 4), silniczki 4-6V, mostek H 6-27V, mostek H zasilony bezposrednio z BMS'a(~16V) - sterowany PWM'em o wypelnieniu 35% w celu uzyskania na silniczkach ~5V
+    - kod napisany modularnie, wszystkie wazne wartosci zamykane w definicjach zmiennych na gorze plikow 
