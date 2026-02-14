@@ -84,3 +84,11 @@ Przeredagowac readme.md
 - sterowanie(sterujemy pilotem od telewizora, program obsluguje komendy repeat wysylane przez pilot - tak dlugo jak trzymany jest przycisk tak dlugo wykonywana jest komenda)
 - zasilanie z BMS(18650 Li-Ion x 4), silniczki 4-6V, mostek H 6-27V, mostek H zasilony bezposrednio z BMS'a(~16V) - sterowany PWM'em o wypelnieniu 35% w celu uzyskania na silniczkach ~5V
 - kod napisany modularnie, wszystkie wazne wartosci zamykane w definicjach zmiennych na gorze plikow 
+
+dokumentacja technicza:
+- schemat polaczen z kicada(discord UMG)
+- opis zasilania plytki i mostkow(mostki z BMS'a, plytka prawdopodobnie z LM7805 na output 5V[żydyzm], enable na mostkach 5V z plytki/LM7805, IR NEC reciever 5V pullup(na schemacie))
+- polaczenie mas(BMS z arduino) przez 220ohm resistor
+- rozpis elementow - uproszczony datasheet(VS1838 - IR NEC, HW-039 IBT_2 - M mostek H, ardunio nano/uno r3, BMS na 4 akumulatory Li-Ion 18650, 2x deceleration brushed DC motor 4-6V)
+- jeszcze raz wspomniec o wypelnieniu pwm'a - silniczki nie wytrzymaja napiecia zasilajacego mostek H, wiec wypelnienie sygnalu sterujecego jest odpowiednio mniejsze zeby uzyskac na silniczkach ~5V)
+- bedzie git :D
