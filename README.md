@@ -44,8 +44,8 @@ Należy ustawić wartość `1` zmiennym:\n
 `MOTOR_RIGHT_INVERT`
 
 ### Autko ściąga w bok?
-Jeżeli autko ściąga na bok, to można ustawić:\n
-```right = right * 0.98```\n
+Jeżeli autko ściąga na bok, to można ustawić:\br
+```right = right * 0.98```
 To zmniejszy siłę skrętu np. w prawo
 
 ## IR
