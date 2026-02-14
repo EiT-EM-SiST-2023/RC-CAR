@@ -40,8 +40,8 @@ Autko jest zdalnie sterowane pilotem do telewizora
 Szybkie rozwiązanie na to jest w pliku `motor_control.h`
 
 Należy ustawić wartość `1` tym zmiennym:
-- `MOTOR_LEFT_INVERT`
-- `MOTOR_RIGHT_INVERT`
+`MOTOR_LEFT_INVERT`
+`MOTOR_RIGHT_INVERT`
 
 ### Autko ściąga w bok?
 Jeżeli autko ściąga na bok, to można ustawić:
