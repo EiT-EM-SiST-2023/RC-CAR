@@ -10,11 +10,11 @@ Bazą projektu jest `Arduino Nano` (lub `uno`, `r3`) / `ATmega328p`.
 Silniki autka są sterowane Mostkami H.
 - Do kontroli 2 mostków **H** (1 mostek na stronę) Wykorzystuje się `Timer 1` i `Timer 2` 
 - **Lewa strona** `Timer1`
-  - **D9  (PB1 / OC1A)**: LEFT_FWD (PWM)
-  - **D10 (PB2 / OC1B)**: LEFT_REV (PWM)
+  - D9  `(PB1 / OC1A)`: LEFT_FWD (PWM)
+  - D10 `(PB2 / OC1B)`: LEFT_REV (PWM)
 - **Prawa strona** `Timer2`
-  - **D3  (PD3 / OC2B)**: RIGHT_FWD (PWM)
-  - **D11 (PB3 / OC2A)**: RIGHT_REV (PWM)
+  - D3  `(PD3 / OC2B)`: RIGHT_FWD (PWM)
+  - D11 `(PB3 / OC2A)`: RIGHT_REV (PWM)
 
 Każdy mostek działa na PWM i kontroluje swój zestaw silników.
 - Kontrola przedniego i tylnego rzędu kół jest taka sama w obu mostkach. Kontrola lewej i prawej kolumny kół jest niezależna między nimi.
